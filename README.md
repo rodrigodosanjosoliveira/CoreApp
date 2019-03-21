@@ -1,1 +1,1 @@
-# CoreApp
+# Core App
