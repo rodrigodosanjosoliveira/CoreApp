@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+
+  web:
+    container_name: 'coreapp'
+    image: 'coreapp'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
+
+  web2:
+    container_name: 'coreapp2'
+    image: 'coreapp'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "5001:5000"
+  web3:
+    container_name: 'coreapp3'
+    image: 'coreapp'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "5002:5000"
